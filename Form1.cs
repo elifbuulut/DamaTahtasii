@@ -20,12 +20,12 @@ namespace DamaTahtasii
         private void Form1_Load(object sender, EventArgs e)
         {
             Button[,] button = new Button[8, 8]; //8 satır 8 sutundan oluşacak bir buton dizisi tanımla =64 adet
-                                                 //[64] değil de [8,8] yazmamın sebebi rahat ulaşmak istemem. örn 27. satırda;
-                                                 //0. boyut(satır) ve 1.boyut (sutun) bu şekilde ayrı ayrı ulaşabiliyorum.
+                                                 //[64] değil de [8,8] sebebi rahat ulaşabilmek;
+                                                 //0. boyut(satır) ve 1.boyut (sutun) bu şekilde ayrı ayrı ulaşılır.
 
             int _top = 0;
             int _left = 0;// Butonları ilk ekledigimizde üst üste geliyor o yüzden 50 birim başlangıç noktasından boşluk bırakmak için bu değişken
-                          // leri tanımladım
+                          // leri tanımlandı
             for (int i = 0; i < button.GetUpperBound(0); i++) // i =>> 0. boyutun en büyük alabilecegi değerden küçük =7
                                                               // O. boyutun en büyük alabileceği değer=7
                                                               // i < button.GetUpperBound(0)= i<8   !!!
